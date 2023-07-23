@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.12)
 
+PROJECT(HelloWorld C)
+
+
 if("${CONTEXT}" STREQUAL "STANDALONE")
 
   include(GNUInstallDirs)
@@ -16,7 +19,6 @@ if("${CONTEXT}" STREQUAL "STANDALONE")
   set(LIB_SOURCES
       ${BUILD}/src/MplaneEcpri.c
       ${BUILD}/src/MplaneAlarms.c
-      ${BUILD}/src/MplanePerformanceMgmt.c
   )
 
   # Library

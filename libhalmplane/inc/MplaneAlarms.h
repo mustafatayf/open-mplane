@@ -34,7 +34,7 @@ typedef struct halmplane_oran_alarm_s {
   uint16_t fault_id;
   char* fault_source;
   char** affected_objects; // array of c-strings, 1-100 c-strings total
-  halmplane_oran_fault_severity_e fault_severity;
+  halmplane_oran_fault_severity_t fault_severity;
   bool is_cleared;
   uint64_t event_time;
   char* fault_text;
