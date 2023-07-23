@@ -1,0 +1,18 @@
+$ mkdir build
+$ cd build
+$ cmake -DCONTEXT=STANDALONE -DBUILD=../x86/ ..
+$ make
+$ sudo make install
+
+
+Additional;
+
+Standalone build
+	cmake -DCONTEXT=STANDALONE ..
+
+for x86
+	cmake -DCONTEXT=STANDALONE -DBUILD=/home/oran/open-mplane/libhalmplane/x86/ ..
+
+Board Build
+	cmake -DBUILD_BOARD=ZCU111 ..
+

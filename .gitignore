@@ -35,3 +35,8 @@ meta-mplane/utils/app.tgz
 
 # Petalinux
 meta-mplane/petalinux/zcu111
+
+# Image files
+*.png
+*.jpg
+*.jpeg

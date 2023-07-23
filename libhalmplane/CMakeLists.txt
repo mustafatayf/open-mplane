@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-PROJECT(HelloWorld C)
+PROJECT(LibHALMplane C)
 
 
 if("${CONTEXT}" STREQUAL "STANDALONE")
