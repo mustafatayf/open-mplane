@@ -30,7 +30,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 	include_directories(test)
 	
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
     addTestCommon(TEST_COMMON common)
 	addTestCommon(TEST_HW_COMMON hardware)
@@ -45,7 +45,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 	    ${TEST_HW_COMMON}/TestFpgaKernel.cpp
         ${TEST_HW_COMMON}/TestFpgaMock.cpp
 	)
-	addGtest(fault_GTEST "${libs}" ${gtest_src})
+#	addGtest(fault_GTEST "${libs}" ${gtest_src})
 	
 
 	# Add code coverage

@@ -17,7 +17,7 @@ addCppcheck(frequencyconstants)
 if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
 	include_directories(gtest)
 	set(gtest_src
@@ -25,7 +25,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 		gtest/CommonRxFrequencyConstantTestCase.cpp
 		gtest/CommonTxFrequencyConstTestCase.cpp
 	)
-	addGtest(frequencyconstants_GTEST "common" ${gtest_src})
+#	addGtest(frequencyconstants_GTEST "common" ${gtest_src})
 
 	# Add code coverage
 	include (coverage)

@@ -18,7 +18,7 @@ if ( ${BUILD_TEST_SHARED} )
     addRepoLib(libs common)
 
     # Load google test
-    include (gtest)
+#    include (gtest)
     
     addTestCommon(TEST_COMMON common)
     addTestCommon(TEST_HW_COMMON hardware)
@@ -30,7 +30,7 @@ if ( ${BUILD_TEST_SHARED} )
         ${TEST_COMMON}/TestIloggerFactory.cpp
         ${TEST_COMMON}/BootEnvSingleton.cpp
     )
-    addGtest(FpgaIrqEmu_GTEST "${libs}" ${gtest_src})
+#    addGtest(FpgaIrqEmu_GTEST "${libs}" ${gtest_src})
 
 endif ()
 

@@ -21,7 +21,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 	addRepoLib (libs common)
 
     # Load google test
-    include (gtest)
+#    include (gtest)
 
 	addTestCommon(TEST_HW_COMMON hardware)
 

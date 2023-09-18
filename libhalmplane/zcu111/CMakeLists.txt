@@ -7,13 +7,9 @@ string(CONCAT SRC
   "src/MplaneHardware.cpp;"
 )
 include_directories(inc)
-
-if( "${CONTEXT}" STREQUAL "YOCTO")
   list(TRANSFORM SRC PREPEND "zcu111/")
   target_sources(halmplane PUBLIC ${SRC})
-else()
-  add_sources(SOURCES ${SRC})
-endif()
+
 
 target_link_libraries( halmplane
   -lxcommon

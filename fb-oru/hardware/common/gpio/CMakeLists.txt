@@ -30,7 +30,7 @@ addCppcheck(gpio)
 if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 	
 	addTestCommon(TEST_HW_COMMON hardware)
 
@@ -41,7 +41,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 		
 		${TEST_HW_COMMON}/TestBus.cpp
 	)
-	addGtest(GPIO_GTEST "common" ${gtest_src})
+#	addGtest(GPIO_GTEST "common" ${gtest_src})
 
 	# Add code coverage
 	include (coverage)

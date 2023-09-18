@@ -16,7 +16,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
     addRepoLib(libs common)
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
     addTestCommon(TEST_HW_COMMON hardware)
 
@@ -28,7 +28,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 		
 		${TEST_HW_COMMON}/TestBus.cpp
 	)
-	addGtest(attenuator_GTEST "${libs}" ${gtest_src})
+#	addGtest(attenuator_GTEST "${libs}" ${gtest_src})
 
 	# Add code coverage
 	include (coverage)

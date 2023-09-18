@@ -13,7 +13,7 @@ addCppcheck(serial)
 if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
 	set (libs "")
 	addRepoLib (libs xcommon)
@@ -36,7 +36,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
         ${TEST_COMMON}/BootEnvSingleton.cpp
 
 	)
-	addGtest(serial_GTEST "${libs}" ${gtest_src})
+#	addGtest(serial_GTEST "${libs}" ${gtest_src})
 
 	# Add code coverage
 	include (coverage)

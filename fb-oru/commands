@@ -1,0 +1,33 @@
+
+Building the "xcommon"
+
+$ cd xcommon
+$ mkdir build && cd build  
+$ cp ../../common/config/config.h .
+$ cmake -DTARGET=x86_64 ..
+
+
+Building the "common"
+
+$ cd common
+$ mkdir build && cd build  
+$ cp ../../common/config/config.h .
+$ cmake -DTARGET=x86_64 ..
+
+
+Building the "hardware/common"
+
+$ cd hardware/common/
+$ mkdir build && cd build  
+$ cp ../../common/config/config.h .
+$ cmake -DTARGET=x86_64 ..
+
+
+
+
+cmake -DCMAKE_MODULE_PATH=/home/oran/open-mplane/fb-oru/buildTools/cmake/Modules -DTARGET=x86_64 ..
+
+cmake -DCMAKE_INCLUDE_PATH=/home/oran/open-mplane/fb-oru/buildTools/cmake/Modules -DTARGET=x86_64 .
+
+
+-DCMAKE_MODULE_PATH=/home/oran/open-mplane/fb-oru/buildTools/cmake/Modules

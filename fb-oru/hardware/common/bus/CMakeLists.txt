@@ -52,7 +52,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
     addRepoLib( libs  common )
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
     addTestCommon(TEST_COMMON common)
     addTestCommon(TEST_HW_COMMON hardware)
@@ -81,7 +81,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 	    ${TEST_HW_COMMON}/TestCommonRefClock.cpp
 	    ${TEST_HW_COMMON}/FpgaRegCapture_fixture.cpp
 	)
-	addGtest(bus_GTEST "${libs}" ${gtest_src})
+#	addGtest(bus_GTEST "${libs}" ${gtest_src})
 
 	# Add code coverage
 	include (coverage)

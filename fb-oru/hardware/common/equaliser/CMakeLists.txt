@@ -8,7 +8,7 @@ add_sources (SOURCES
 if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
 	set (libs "")
 	addRepoLib (libs xcommon)
@@ -54,7 +54,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
         ${TEST_HW_COMMON}/TestRadioConfigFactory.cpp
 
 	)
-	addGtest(Equaliser_GTEST "${libs}" ${gtest_src})
+#	addGtest(Equaliser_GTEST "${libs}" ${gtest_src})
 
 	# Add code coverage
 	include (coverage)

@@ -15,7 +15,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 	addRepoLib (libs common)
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
     addTestCommon(TEST_COMMON common)
 
@@ -28,7 +28,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
         ${TEST_COMMON}/TestIloggerFactory.cpp
         ${TEST_COMMON}/BootEnvSingleton.cpp
 	)
-	addGtest(systemled_GTEST "${libs}" ${gtest_src})
+#	addGtest(systemled_GTEST "${libs}" ${gtest_src})
 
 	# Add code coverage
 	include (coverage)

@@ -7,17 +7,24 @@
 cmake_minimum_required (VERSION 3.0.1 FATAL_ERROR)
 project (hardwareCommon CXX)
 set (version "0.1")
-
+include(CMakePrintHelpers)
+#message("CMAKE_MODULE_PATH=${CMAKE_MODULE_PATH}")
+#set(CMAKE_MODULE_PATH ${GITDIR}/buildTools/cmake/Modules)
 ##----------------------------------------------------------------------------------------------------------------------
+message("GITDIR before if condition=${GITDIR}")
 if (NOT GITDIR)
 
 	get_filename_component (GITDIR ${PROJECT_SOURCE_DIR} DIRECTORY)
 	list(APPEND CMAKE_MODULE_PATH ${GITDIR}/buildTools/cmake/Modules)
-
+	message("GITDIR inside if condition=${GITDIR}")
+#	cmake_print_variables(GITDIR)
 endif ()
 
 ##----------------------------------------------------------------------------------------------------------------------
 ## Get shared include
+message("CMAKE_MODULE_PATH=${CMAKE_MODULE_PATH}")
+#include_directories(${GITDIR/buildTools/cmake/Modules})
+#include(/home/oran/open-mplane/fb-oru/buildTools/cmake/Modules/rse.cmake)
 include(rse)
 
 ##----------------------------------------------------------------------------------------------------------------------

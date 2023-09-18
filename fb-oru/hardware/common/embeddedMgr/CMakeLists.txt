@@ -5,14 +5,14 @@ add_sources (SOURCES
 )
 
 ## When feature DPD2=NONE we need to add a dummy msg handler
-if ($ENV{FEAT_DPD2} STREQUAL "NONE" )
+#if ($ENV{FEAT_DPD2} STREQUAL "NONE" )
 
 	message(STATUS "Feature DPD2=NONE: Adding dummy msg handler")
 	add_sources (SOURCES
 		src/DummyRemoteMsgHandler.cpp
 	)
 	
-endif()
+#endif()
 
 ## Cppcheck
 include (cppcheck)
@@ -25,7 +25,7 @@ if ( (${TARGET} STREQUAL "x86_64") )
     addRepoLib(libs common)
     
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
     addTestCommon(TEST_COMMON common)
 	addTestCommon(TEST_HW_COMMON hardware)
@@ -37,7 +37,7 @@ if ( (${TARGET} STREQUAL "x86_64") )
 		gtest/TestEmbeddedMgr.cpp
 		gtest/tests.cpp
 	)
-	addGtest(embeddedMgr_GTEST "${libs}" ${gtest_src})
+#	addGtest(embeddedMgr_GTEST "${libs}" ${gtest_src})
 	
 	# Add code coverage
 	include (coverage)

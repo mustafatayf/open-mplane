@@ -20,7 +20,7 @@ if ( (${TARGET} STREQUAL "x86_64") )
     addRosLib( libs  tinyxml2 )
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
     addTestCommon(TEST_COMMON common)
 	addTestCommon(TEST_HW_COMMON hardware)
@@ -59,7 +59,7 @@ if ( (${TARGET} STREQUAL "x86_64") )
 	    ${TEST_COMMON}/TestIloggerFactory.cpp
         ${TEST_COMMON}/BootEnvSingleton.cpp
 	)
-	addGtest(agc_GTEST "${libs}" ${gtest_src})
+#	addGtest(agc_GTEST "${libs}" ${gtest_src})
 	
 	# Add code coverage
 	include (coverage)

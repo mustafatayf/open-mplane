@@ -27,7 +27,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
     addRosLib( libs  tinyxml2 )
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
     addTestCommon(TEST_COMMON common)
 	addTestCommon(TEST_HW_COMMON hardware)

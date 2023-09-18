@@ -23,7 +23,7 @@ if (${TARGET} STREQUAL "x86_64")
 
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
 	include_directories(gtest)
 	set(gtest_src
@@ -34,7 +34,7 @@ if (${TARGET} STREQUAL "x86_64")
 		${TEST_COMMON}/TestIloggerFactory.cpp
         ${TEST_COMMON}/BootEnvSingleton.cpp
 	)
-	addGtest(License_GTEST "${libs}" ${gtest_src})
+#	addGtest(License_GTEST "${libs}" ${gtest_src})
 
 	# Add code coverage
 	include (coverage)

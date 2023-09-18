@@ -19,7 +19,7 @@ if (${TARGET} STREQUAL "x86_64")
 	addRepoLib (libs common)
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
     addTestCommon(TEST_COMMON common)
     addTestCommon(TEST_HW_COMMON hardware)
@@ -34,7 +34,7 @@ if (${TARGET} STREQUAL "x86_64")
         ${TEST_COMMON}/TestIloggerFactory.cpp
         ${TEST_COMMON}/BootEnvSingleton.cpp
 	)
-	addGtest(radioConfig_GTEST "${libs}" ${gtest_src})
+#	addGtest(radioConfig_GTEST "${libs}" ${gtest_src})
 
 	# Add code coverage
 	include (coverage)

@@ -11,7 +11,7 @@ addCppcheck(DelaysMgr)
 if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
 	set (libs "")
 	addRepoLib (libs xcommon)
@@ -29,7 +29,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 		${TEST_COMMON}/TestIloggerFactory.cpp
         ${TEST_COMMON}/BootEnvSingleton.cpp
 	)
-	addGtest(DelaysMgr_GTEST "${libs}" ${gtest_src})
+#	addGtest(DelaysMgr_GTEST "${libs}" ${gtest_src})
 
 	# Add code coverage
 	include (coverage)

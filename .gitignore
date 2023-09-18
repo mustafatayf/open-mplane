@@ -40,3 +40,18 @@ meta-mplane/petalinux/zcu111
 *.png
 *.jpg
 *.jpeg
+
+# codelite and IDE
+*.project
+*.cproject
+*.cmake
+CMakeFiles/
+CMakeCache.txt
+Makefile
+
+# local temp
+*.old
+*.old2
+
+# other
+.metadata/

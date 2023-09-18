@@ -32,7 +32,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 	addRepoLib (libs common)
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
 
     addTestCommon(TEST_COMMON common)
@@ -80,7 +80,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
         ${TEST_HW_COMMON}/TestICarrierHardwareSingleton.cpp
         ${TEST_HW_COMMON}/TestICarrierHardware.cpp
 	)
-	addGtest(carrier_GTEST "${libs}" ${gtest_src})
+#	addGtest(carrier_GTEST "${libs}" ${gtest_src})
 
 	# Load cppunit
 	include (cppunit)

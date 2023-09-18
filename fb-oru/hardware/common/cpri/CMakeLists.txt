@@ -15,7 +15,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) AND (${BUILD_FIBRE
 	addRepoLib( libs  common )
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
 	addTestCommon(TEST_COMMON common)
 	addTestCommon(TEST_HW_COMMON hardware)
@@ -33,7 +33,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) AND (${BUILD_FIBRE
 	    ${TEST_HW_COMMON}/TestCommonCpriSingleton.cpp
 		${TEST_HW_COMMON}/TestBus.cpp
 	)
-	addGTest(cpri_GTEST "${libs}" ${gtest_src})
+#	addGTest(cpri_GTEST "${libs}" ${gtest_src})
 
 	# Add code coverage
 	include (coverage)

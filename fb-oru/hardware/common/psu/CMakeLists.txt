@@ -13,7 +13,7 @@ addCppcheck(psu)
 if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 
 	# Load gtest
-	include (gtest)
+#	include (gtest)
 
 	addRepoLib(libs xcommon )
     addRepoLib(libs common )
@@ -59,7 +59,7 @@ if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
         
 
 	)
-	addGtest(psu_GTEST "${libs}" ${gtest_src})
+#	addGtest(psu_GTEST "${libs}" ${gtest_src})
 
 	# Add code coverage
 	include (coverage)

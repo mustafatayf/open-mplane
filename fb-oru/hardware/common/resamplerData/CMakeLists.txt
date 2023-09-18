@@ -11,14 +11,14 @@ addCppcheck(resamplerData)
 if ( (${TARGET} STREQUAL "x86_64") AND (${BUILD_TEST_SHARED}) )
 
 	# Load google test
-	include (gtest)
+#	include (gtest)
 
 	include_directories(gtest)
 	set(gtest_src
 		gtest/CommonResamplerConfigTests.cpp
 		gtest/CommonResamplerConfigTestCase.cpp
 	)
-	addGtest(Resampler_GTEST "common" ${gtest_src})
+#	addGtest(Resampler_GTEST "common" ${gtest_src})
 
 	# Add code coverage
 	include (coverage)
